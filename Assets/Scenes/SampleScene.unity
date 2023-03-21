@@ -383,7 +383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab1: {fileID: 5533498609651650281, guid: 28e13080b84ed244fae61104da60437c, type: 3}
-  spawnPoint: {fileID: 355193544}
+  spawnPoint: {fileID: 1896117032}
   spawnPoint2: {fileID: 0}
   timeBetweenWaves: 5.5
   waveCountdownText: {fileID: 664430082}
