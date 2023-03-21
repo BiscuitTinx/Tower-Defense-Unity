@@ -5,10 +5,7 @@ using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
-    public Transform enemyPrefab1;
-    //These are the prefabs for the enemies we will use
-    //public Transform enemyPrefab2;
-    //public Transform enemyPrefab3;
+    public Transform[] enemyPrefabs;
 
     public Transform spawnPoint;
     public Transform spawnPoint2;
@@ -46,6 +43,8 @@ public class WaveSpawner : MonoBehaviour
 
     void SpawnEnemy()
     {
-        Instantiate(enemyPrefab1, spawnPoint.position, spawnPoint.rotation);
+        int wave = waveIndex - 1;
+        int enemyIndex = Random.Range(0, Mathf.Clamp(wave, 0, enemyPrefabs.Length));          //Picks random enemy from list chooses
+        Instantiate(enemyPrefabs[enemyIndex], spawnPoint.position, spawnPoint.rotation);
     }
 }

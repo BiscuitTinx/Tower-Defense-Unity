@@ -257,6 +257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 239219466}
   - component: {fileID: 239219465}
+  - component: {fileID: 239219467}
   m_Layer: 0
   m_Name: Main Character
   m_TagString: Untagged
@@ -331,6 +332,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &239219467
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239219464}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.1730963
+  m_Height: 0.55695903
+  m_Direction: 1
+  m_Center: {x: -0.0193561, y: 0.040863153, z: 0}
 --- !u!1001 &271005377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1836,7 +1851,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26bd719962cb2f740a469b2792ae5887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab1: {fileID: 8917575752590195214, guid: 92a943c7fd02d944689a78be66c47e54, type: 3}
+  enemyPrefabs:
+  - {fileID: 8917575752590195214, guid: 92a943c7fd02d944689a78be66c47e54, type: 3}
+  - {fileID: 1516791370590385580, guid: eaead6fd48379f4479b2acfaa079b39c, type: 3}
   spawnPoint: {fileID: 998148372}
   spawnPoint2: {fileID: 0}
   timeBetweenWaves: 5.5
