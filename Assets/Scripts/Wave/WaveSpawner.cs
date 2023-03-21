@@ -30,7 +30,7 @@ public class WaveSpawner : MonoBehaviour
 
         countdown -= Time.deltaTime;
 
-        waveCountdownText.text = ("Next Wave:" + Mathf.Round(countdown).ToString());
+        waveCountdownText.text = ("Next Wave:" + Mathf.Round(countdown).ToString());              //Makes TMP Show the Next wave text with a countdown from timer
     }
 
     IEnumerator SpawnWave()
@@ -38,8 +38,7 @@ public class WaveSpawner : MonoBehaviour
         for (int i = 0; i < waveIndex; i++)
         {
             SpawnEnemy();
-            //Spawns enemies 0.5 seconds between each so it they dont collide
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.5f);           //Spawns enemies 0.5 seconds between each so it they dont collide
         }
 
         waveIndex++;
