@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 239219465}
   - component: {fileID: 239219468}
   - component: {fileID: 239219470}
-  - component: {fileID: 239219469}
+  - component: {fileID: 239219471}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -347,22 +347,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
---- !u!70 &239219469
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239219464}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.023210105, y: 0.044558782}
-  m_Size: {x: 0.34190714, y: 0.50174946}
-  m_Direction: 0
 --- !u!50 &239219470
 Rigidbody2D:
   serializedVersion: 4
@@ -384,6 +368,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &239219471
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239219464}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.000000059604645, y: -0.057945143}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.28683007, y: 0.2660294}
+  m_EdgeRadius: 0
 --- !u!1001 &271005377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1976,6 +1986,7 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 8917575752590195214, guid: 92a943c7fd02d944689a78be66c47e54, type: 3}
   - {fileID: 1516791370590385580, guid: eaead6fd48379f4479b2acfaa079b39c, type: 3}
+  - {fileID: 3993933172455923872, guid: c0b93cee9defbc944908ed26a5e16ac4, type: 3}
   spawnPoint: {fileID: 998148372}
   spawnPoint2: {fileID: 0}
   timeBetweenWaves: 5.5
