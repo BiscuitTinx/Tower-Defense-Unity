@@ -12972,9 +12972,17 @@ PrefabInstance:
       value: Zeus
       objectReference: {fileID: 0}
     - target: {fileID: 2276795318426391273, guid: cd7ca72e436c5ef409362c04bcf18bca, type: 3}
+      propertyPath: fireRate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2276795318426391273, guid: cd7ca72e436c5ef409362c04bcf18bca, type: 3}
       propertyPath: bulletPrefab
       value: 
       objectReference: {fileID: 6532699961258854132, guid: cc6ce04e91736184dad22ecec4596dad, type: 3}
+    - target: {fileID: 2276795318426391274, guid: cd7ca72e436c5ef409362c04bcf18bca, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2276795318426391275, guid: cd7ca72e436c5ef409362c04bcf18bca, type: 3}
       propertyPath: m_RootOrder
       value: 1
