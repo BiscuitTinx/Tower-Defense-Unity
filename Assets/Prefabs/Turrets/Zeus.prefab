@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 2276795318426391274}
   - component: {fileID: 2276795318426391273}
   m_Layer: 0
-  m_Name: Zeus (1)
+  m_Name: Zeus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyTag: Enemy
-  bulletPrefab: {fileID: 1964316601375109380, guid: e010e14fc0eacfc4b8b01841d1552acf, type: 3}
-  firePoint: {fileID: 0}
+  bulletPrefab: {fileID: 6532699961258854132, guid: cc6ce04e91736184dad22ecec4596dad, type: 3}
+  firePoint: {fileID: 2276795317122520600}
   range: 2
   fireRate: 1
