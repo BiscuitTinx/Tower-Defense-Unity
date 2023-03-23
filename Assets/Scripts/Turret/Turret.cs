@@ -6,6 +6,8 @@ public class Turret : MonoBehaviour
 {
     private Transform target;
 
+    private SpriteRenderer spriteRend;
+
     [Header("Unity Setup Fields")]
 
     public string enemyTag = "Enemy";
@@ -17,6 +19,12 @@ public class Turret : MonoBehaviour
     public float range = 15f;
     public float fireRate = 1f;
     private float fireCountdown = 0f;
+
+    void Awake()
+    {
+        spriteRend = GetComponent<SpriteRenderer>();
+        spriteRend.sortingOrder = (int)-transform.position.y;
+    }
 
     // Start is called before the first frame update
     void Start()
