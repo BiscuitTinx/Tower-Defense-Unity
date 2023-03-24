@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
     {
         //Closes Application
         Application.Quit();
+        Debug.Log("Game Close");
     }
 
     public void OnPlayClick(int sceneIndex = 0)
