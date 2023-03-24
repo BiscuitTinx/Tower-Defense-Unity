@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4138107481370185194}
   - component: {fileID: 4138107481370185195}
   m_Layer: 0
-  m_Name: hades_
+  m_Name: hades
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,4 +133,4 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6532699961258854132, guid: cc6ce04e91736184dad22ecec4596dad, type: 3}
   firePoint: {fileID: 4138107481287199466}
   range: 3
-  fireRate: 1
+  fireRate: 3
