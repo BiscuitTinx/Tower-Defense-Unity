@@ -71,7 +71,7 @@ public class Turret : MonoBehaviour
 
         fireCountdown -= Time.deltaTime;
 
-        if (target == null) ;
+        if (target == null)
         {
             return;
         }
