@@ -76,7 +76,6 @@ public class Turret : MonoBehaviour
             return;
         }
         
-
     }
 
     void Shoot()
