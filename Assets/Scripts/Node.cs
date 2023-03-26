@@ -1,12 +1,16 @@
+using System.Runtime.InteropServices.WindowsRuntime;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class Node : MonoBehaviour
 {
     public Color hoveredColor;
+    public Color notEnoughMoneyColor;
     public Vector3 positionOffset;
 
-    private GameObject turret;
+    [Header("Optional")]
+    public GameObject turret;
 
     private Renderer rend;
     private Color startColor;
@@ -20,6 +24,11 @@ public class Node : MonoBehaviour
         buildManager = BuildManager.instance;
     }
 
+    public Vector3 GetBuildPosition()
+    {
+        return transform.position + positionOffset;
+    }
+
     void OnMouseDown()
     {
         if (EventSystem.current.IsPointerOverGameObject())
@@ -27,7 +36,7 @@ public class Node : MonoBehaviour
             return;
         }
 
-        if (buildManager.GetTurretToBuild() == null)
+        if (!buildManager.CanBuild)
         {
             return;
         }
@@ -37,9 +46,8 @@ public class Node : MonoBehaviour
             Debug.Log("Can't build there!");
             return;
         }
-
-        GameObject turrentToBuild = buildManager.GetTurretToBuild();
-        turret = (GameObject)Instantiate(turrentToBuild, transform.position + positionOffset, transform.rotation);
+        buildManager.BuildTurretOn(this);
+   
     }
 
     void OnMouseEnter()
@@ -49,12 +57,19 @@ public class Node : MonoBehaviour
             return;
         }
 
-        if (buildManager.GetTurretToBuild() == null)
+        if (!buildManager.CanBuild)
         {
             return;
         }
 
-        rend.material.color = hoveredColor;
+        if (buildManager.HasMoney)
+        {
+            rend.material.color = hoveredColor;
+        }else
+        {
+            rend.material.color = notEnoughMoneyColor;
+        }
+
     }
 
     void OnMouseExit()

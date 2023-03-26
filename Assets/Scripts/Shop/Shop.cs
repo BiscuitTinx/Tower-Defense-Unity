@@ -2,21 +2,32 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
+    public TurretBlueprint marcosTurret;
+    public TurretBlueprint zeusTurret;
+    public TurretBlueprint hadesTurret;
+
     BuildManager buildManager;
 
     void Start()
     {
         buildManager = BuildManager.instance;
     }
-    public void PurchaseZeusTurret()
+
+    public void SelectMarcosTurret()
     {
-        Debug.Log("Zeus Purchased");
-        buildManager.SetTurretToBuild(buildManager.ZeusPrefab);
+        Debug.Log("Marcos Purchased");
+        buildManager.SelectTurretToBuild(marcosTurret);
     }
 
-    public void PurchaseHadesTurret()
+    public void SelectZeusTurret()
+    {
+        Debug.Log("Zeus Purchased");
+        buildManager.SelectTurretToBuild(zeusTurret);
+    }
+
+    public void SelectHadesTurret()
     {
         Debug.Log("Hades Purchased");
-        buildManager.SetTurretToBuild(buildManager.HadesPrefab);
+        buildManager.SelectTurretToBuild(hadesTurret);
     }
 }
