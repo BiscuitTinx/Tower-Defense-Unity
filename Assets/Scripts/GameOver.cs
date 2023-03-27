@@ -5,12 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    public TMP_Text roundsText;
+    
 
-    void OnEnabled()
-    {
-        roundsText.text = PlayerStats.Rounds.ToString();
-    }
+  
 
     public void Retry()
     {

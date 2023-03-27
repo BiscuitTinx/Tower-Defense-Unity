@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-
+    
     public static bool GameIsOver;
-
+    public GameObject TextUI;
     public GameObject gameOverUI;
+    public TMP_Text roundsText;
 
     void Start()
     {
@@ -25,6 +27,7 @@ public class GameManager : MonoBehaviour
         if (PlayerStats.lives <= 0)
         {
             EndGame();
+            
         }
     }
 
@@ -32,5 +35,7 @@ public class GameManager : MonoBehaviour
     {
         GameIsOver = true;
         gameOverUI.SetActive(true);
+        roundsText.text = PlayerStats.Rounds.ToString();
+        TextUI.SetActive(false);
     }
 }
