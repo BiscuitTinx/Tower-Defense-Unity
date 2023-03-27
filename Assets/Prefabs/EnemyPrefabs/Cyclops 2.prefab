@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 303977034305200430}
   - component: {fileID: 9048488305172737447}
   - component: {fileID: 835595669722110873}
+  - component: {fileID: 5261018278949841523}
   m_Layer: 0
   m_Name: Cyclops 2
   m_TagString: Enemy
@@ -116,4 +117,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   health: 150
-  value: 50
+  worth: 50
+  deathEffect: {fileID: 5273280521005157128, guid: 341919e3c5ba2ad4b985f995697f88df, type: 3}
+--- !u!114 &5261018278949841523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3001346397991908661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249cd99a9e4a87f46adf267dc9b2a6fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

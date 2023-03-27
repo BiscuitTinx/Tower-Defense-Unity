@@ -5,6 +5,7 @@ using UnityEngine;
 public class Turret : MonoBehaviour
 {
     private Transform target;
+    private Enemy targetEnemy;
 
     private SpriteRenderer spriteRend;
 
@@ -52,6 +53,7 @@ public class Turret : MonoBehaviour
         if (nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
+            targetEnemy = nearestEnemy.GetComponent<Enemy>();
         }
         else
         {
@@ -87,6 +89,7 @@ public class Turret : MonoBehaviour
        {
            bullet.Seek(target);
        }
+
     }
 
     void OnDrawGizmosSelected()

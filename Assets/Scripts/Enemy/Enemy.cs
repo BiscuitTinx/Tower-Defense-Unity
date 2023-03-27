@@ -1,22 +1,17 @@
+using System.Collections;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed = 10f;
+    public float speed ;
 
-    public int health = 100;
+    public float  health = 100;
 
-    public int value = 50;
+    public int worth = 50;
 
-    private Transform target;
-    private int wavepointIndex = 0;
+    public GameObject deathEffect;
 
-    void Start()
-    {
-        target = WayPoints.points[0];
-    }
-
-    public void TakeDamage(int amount)
+    public void TakeDamage(float amount)
     {
         health -= amount;
 
@@ -26,39 +21,16 @@ public class Enemy : MonoBehaviour
         }
     }
 
+
+
     void Die()
-    {
-        PlayerStats.Money += value;
+    { 
+        PlayerStats.Money += worth;
 
-        Destroy(gameObject);
-    }
+        GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Destroy(effect, 5f);
 
-    void Update()
-    {
-        //This makes the enemy moves towards the Waypoints 
-        transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
 
-        if (Vector3.Distance(transform.position, target.position) <= 0.2f)
-        {
-            GetNextWayPoint();
-        }
-    }
-
-    void GetNextWayPoint()
-    {
-        if (wavepointIndex >= WayPoints.points.Length - 1)
-        {
-           EndPath();
-            return;
-        }
-
-        wavepointIndex++;
-        target = WayPoints.points[wavepointIndex];
-    }
-
-    void EndPath()
-    {
-        PlayerStats.lives--;
         Destroy(gameObject);
     }
 }

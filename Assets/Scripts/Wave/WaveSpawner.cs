@@ -10,7 +10,7 @@ public class WaveSpawner : MonoBehaviour
     public Transform spawnPoint;
 
     public float timeBetweenWaves = 5f;
-    private float countdown = 2f;
+    private float countdown = 0.5f;
 
     public  TMP_Text waveCountdownText;
 
@@ -40,6 +40,7 @@ public class WaveSpawner : MonoBehaviour
         }
 
         waveIndex++;
+        PlayerStats.Rounds++;
     }
 
     void SpawnEnemy()

@@ -134,3 +134,4 @@ MonoBehaviour:
   firePoint: {fileID: 1495934519994462703}
   range: 1.5
   fireRate: 2
+  slowPct: 0

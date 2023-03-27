@@ -5,7 +5,7 @@ public class Bullet : MonoBehaviour
 {
     private Transform target;
 
-    public float speed = 70;
+    public float speed = 70f;
 
     public int damage = 50;
 
@@ -37,26 +37,23 @@ public class Bullet : MonoBehaviour
         transform.Translate(dir.normalized * distanceThisFrame, Space.World);
     }
 
-    void Damage(Transform enemy)
-    {
-        Enemy e = enemy.GetComponent<Enemy>();
-
-        if (GetComponent<Collider>().tag == "Enemy")
-        {
-            Damage(GetComponent<Collider>().transform);
-        }
-
-        if (e != null)
-        {
-            e.TakeDamage(damage);
-        }
-    }
 
     void HitTarget()
     {
         GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
-        Destroy(effectIns, 1f);
+        Destroy(effectIns, 2f);
 
         Destroy(gameObject);
+
+        Damage(target);
+    }
+
+    void Damage (Transform enemy)
+    {
+        Enemy e = enemy.GetComponent<Enemy>();
+        if (e != null)
+        {
+            e.TakeDamage(damage);
+        }
     }
 }
