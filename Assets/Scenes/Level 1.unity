@@ -18384,7 +18384,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 143.47423, y: -34.172966}
+  m_AnchoredPosition: {x: 152, y: -34.173}
   m_SizeDelta: {x: 225.011, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1408675063
@@ -26154,6 +26154,7 @@ MonoBehaviour:
   - {fileID: 1516791370590385580, guid: eaead6fd48379f4479b2acfaa079b39c, type: 3}
   - {fileID: 3993933172455923872, guid: c0b93cee9defbc944908ed26a5e16ac4, type: 3}
   miniBoss: {fileID: 7428417452501549409, guid: 95e77fd11d3457140b0d9567529a2050, type: 3}
+  Boss: {fileID: 4485785078229437117, guid: 12b21e746464ea643825b64a952000ad, type: 3}
   spawnPoint: {fileID: 998148372}
   timeBetweenWaves: 2
   waves: {fileID: 1096168186}
