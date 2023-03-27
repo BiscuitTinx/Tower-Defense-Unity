@@ -62,14 +62,14 @@ public class WaveSpawner : MonoBehaviour
     {
         int wave = waveIndex - 1;
         
-        if (PlayerStats.Rounds%5==0 && !(PlayerStats.Rounds%10==0))//checks if number is divisible by 5 but not by 10 
+        if ((PlayerStats.Rounds)%5==0 && !((PlayerStats.Rounds)%10==0))//checks if number is divisible by 5 but not by 10 
         {
             Instantiate(miniBoss, spawnPoint.position, spawnPoint.rotation);
             Debug.Log("Hydra");
         }
-        if ((PlayerStats.Rounds % 10 == 0))
+        if ((PlayerStats.Rounds) % 10 == 0)
         {
-            Instantiate(Boss, spawnPoint.position, spawnPoint.rotation);// spawns miniboss
+            Instantiate(Boss, spawnPoint.position, spawnPoint.rotation);// spawns boss
         }
 
             

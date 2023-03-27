@@ -26156,7 +26156,7 @@ MonoBehaviour:
   miniBoss: {fileID: 7428417452501549409, guid: 95e77fd11d3457140b0d9567529a2050, type: 3}
   Boss: {fileID: 4485785078229437117, guid: 12b21e746464ea643825b64a952000ad, type: 3}
   spawnPoint: {fileID: 998148372}
-  timeBetweenWaves: 2
+  timeBetweenWaves: 7.5
   waves: {fileID: 1096168186}
   waveCountdownText: {fileID: 1408675063}
 --- !u!4 &1816571188
@@ -31709,7 +31709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &2088451729
 AudioSource:
   m_ObjectHideFlags: 0
