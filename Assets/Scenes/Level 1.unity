@@ -4613,7 +4613,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -145, y: 91}
+  m_AnchoredPosition: {x: -115.30005, y: 91}
   m_SizeDelta: {x: 225.01099, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &461340878
@@ -7104,7 +7104,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1691, y: -34.172966}
+  m_AnchoredPosition: {x: 1709, y: -34.172966}
   m_SizeDelta: {x: 225.011, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &646000148
@@ -9170,7 +9170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 829.30005, y: -294}
+  m_AnchoredPosition: {x: 859, y: -294}
   m_SizeDelta: {x: 225.01099, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &817380460
@@ -11068,7 +11068,7 @@ PrefabInstance:
     - target: {fileID: 6440309368022668598, guid: af6e26023b078944e8ed42f8cff24e59, type: 3}
       propertyPath: turret
       value: 
-      objectReference: {fileID: 7521140231475970311, guid: ff3efa964afdc5a43a05cbbcfe350043, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 6440309368022668598, guid: af6e26023b078944e8ed42f8cff24e59, type: 3}
       propertyPath: hoveredColor.a
       value: 0.5882353
@@ -18388,7 +18388,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 152, y: -34.173}
+  m_AnchoredPosition: {x: 131, y: -34.173}
   m_SizeDelta: {x: 225.011, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1408675063
@@ -26160,7 +26160,7 @@ MonoBehaviour:
   miniBoss: {fileID: 7428417452501549409, guid: 95e77fd11d3457140b0d9567529a2050, type: 3}
   Boss: {fileID: 4485785078229437117, guid: 12b21e746464ea643825b64a952000ad, type: 3}
   spawnPoint: {fileID: 998148372}
-  timeBetweenWaves: 7.5
+  timeBetweenWaves: 10
   waves: {fileID: 1096168186}
   waveCountdownText: {fileID: 1408675063}
 --- !u!4 &1816571188
@@ -26207,7 +26207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMoney: 400
-  startLives: 3
+  startLives: 20
 --- !u!114 &1816571191
 MonoBehaviour:
   m_ObjectHideFlags: 0
