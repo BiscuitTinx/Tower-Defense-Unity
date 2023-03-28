@@ -130,8 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyTag: Enemy
-  bulletPrefab: {fileID: 1964316601375109380, guid: e010e14fc0eacfc4b8b01841d1552acf, type: 3}
+  bulletPrefab: {fileID: 5587986622975412778, guid: 52d1912b22a2e7a4ea5acfb53db581a4, type: 3}
   firePoint: {fileID: 1495934519994462703}
   range: 1.5
   fireRate: 2
-  slowPct: 0

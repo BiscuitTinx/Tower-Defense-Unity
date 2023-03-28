@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -2584972232851234652}
   m_Layer: 0
   m_Name: lighting
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,4 +98,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
+  damage: 50
   impactEffect: {fileID: 4297404330907577296, guid: 02ef335cd58fdf44badfd051a0514a73, type: 3}
