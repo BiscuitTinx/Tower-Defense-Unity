@@ -50,6 +50,7 @@ public class Turret : MonoBehaviour
             }
         }
 
+        //Targets enemy closest to turret
         if (nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
@@ -61,7 +62,7 @@ public class Turret : MonoBehaviour
         }
 
     }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -82,6 +83,7 @@ public class Turret : MonoBehaviour
 
     void Shoot()
     {
+        //shows bullet prefab a turret used into the game, this could include a spear, fireball and or lightning bolts
        GameObject bulletGO = (GameObject) Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
        Bullet bullet = bulletGO.GetComponent<Bullet>();
 
@@ -94,6 +96,7 @@ public class Turret : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
+        //Draws red radius on the turrets, this will also come in hand to show whether the enemies are in range
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
     }

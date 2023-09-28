@@ -35,6 +35,7 @@ public class BuildManager : MonoBehaviour
 
     public void BuildTurretOn(Node node)
     {
+        //prevents u from building the turret as you have no money
        if (PlayerStats.Money < turretToBuild.cost)
        {
            Debug.Log("Not Enough Gold To Build That");
@@ -43,9 +44,11 @@ public class BuildManager : MonoBehaviour
 
        PlayerStats.Money -= turretToBuild.cost;
 
+        //build turret
        GameObject turret = (GameObject)Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
        node.turret = turret;
 
+        //Cool little blue partcile effect when you build the turret ;)
        GameObject effect = (GameObject)Instantiate(buildEffect, node.GetBuildPosition(), Quaternion.identity);
        Destroy(effect, 5f);
 

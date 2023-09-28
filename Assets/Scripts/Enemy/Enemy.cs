@@ -25,10 +25,10 @@ public class Enemy : MonoBehaviour
 
     void Die()
     { 
-        PlayerStats.Money += worth;
+        PlayerStats.Money += worth;              //Player gains money when enemy dies
 
         GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
-        Destroy(effect, 5f);
+        Destroy(effect, 5f);                                  //Show a death effect and deletes the effect after 5 seconds
 
 
         Destroy(gameObject);

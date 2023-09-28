@@ -7,6 +7,7 @@ public class WayPoints : MonoBehaviour
 
     void Awake()
     {
+        //this is just so the enemy follows the array of waypoints
         points = new Transform[transform.childCount];
         for (int i = 0; i < points.Length; i++)
         {

@@ -14,8 +14,8 @@ public class PlayerStats : MonoBehaviour
 
     void Start()
     {
-        Money = startMoney;
-        lives = startLives;
+        Money = startMoney;          //start of game player starts with 400 money
+        lives = startLives;          //Start of game the player has 20 lives
 
         Rounds = 0;
     }

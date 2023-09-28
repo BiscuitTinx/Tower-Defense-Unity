@@ -9,6 +9,7 @@ public class LivesUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //when the value of the lives changes it keeps ':' so it still looks the same
         livesText.text = " : " + PlayerStats.lives.ToString();
     }
 }

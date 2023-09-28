@@ -40,7 +40,7 @@ public class Node : MonoBehaviour
         {
             return;
         }
-
+        //you cannot build there
         if (turret != null)
         {
             Debug.Log("Can't build there!");
@@ -62,6 +62,7 @@ public class Node : MonoBehaviour
             return;
         }
 
+        //when cursor hover over grass node it makes it to a selectec colour in Inspector
         if (buildManager.HasMoney)
         {
             rend.material.color = hoveredColor;

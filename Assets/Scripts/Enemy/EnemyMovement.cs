@@ -29,6 +29,7 @@ public class EnemyMovement : MonoBehaviour
 
     void GetNextWayPoint()
     {
+
         if (wavepointIndex >= WayPoints.points.Length - 1)
         {
             EndPath();
@@ -41,7 +42,7 @@ public class EnemyMovement : MonoBehaviour
 
     void EndPath()
     {
-        PlayerStats.lives--;
+        PlayerStats.lives--;   //Takes lives off player when reaches end of path
         Destroy(gameObject);
     }
 }
